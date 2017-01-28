@@ -1,22 +1,21 @@
 class GuessingGame {
     constructor() {
-   this.min=0;
-   this.max=0;
-   //this.number=0;
+    
+    this.max=0;
+    this.min=0;
+    this.number=0
 
     this.setRange = function (min, max) {
-    	
     	this.min=min;
     	this.max=max;
-    	
+    	return this;
     };
 
     this.guess = function (){
-   var max,min,k;
-    	this.setRange(max,min);
-    	 while (min < max)                
-       {  k = Math.floor((min+max)/2);
-       	if (this.number <= k) 
+
+    	 while (this.min < this.max)                
+       { number = Math.ceil((this.min + this.max) / 2);
+       	if (this.number <= number) 
        		this.lower();
        else this.greater();
        }
@@ -27,16 +26,15 @@ class GuessingGame {
     };
 
     this.lower= function (){
-//var min,max;
-//this.setRange(min,max);
-//min=this.k;
+    	this.max=this.number;
+		return this;
     };
 
     this.greater=function (){
-//var min,max;
-//this.setRange(min,max);
-//min=this.k+1;
+   	 	this.min=this.number;
+		return this;
     };
-}
+} 
 }
 module.exports = GuessingGame;
+
