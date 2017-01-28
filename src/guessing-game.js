@@ -4,10 +4,10 @@ class GuessingGame {
     this.max=0;
     }
 
-    this.setRange = function(min, max) {
+    setRange (min, max) {
     	this.min=min;
     	this.max=max;
-    };
+    }
 
     guess() {
 
