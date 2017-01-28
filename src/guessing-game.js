@@ -12,7 +12,7 @@ class GuessingGame {
     };
 
     this.guess = function (){
-   /* 	var max,min,k;
+   var max,min,k;
     	this.setRange(max,min);
     	 while (min < max)                
        {  k = Math.floor((min+max)/2);
@@ -23,7 +23,7 @@ class GuessingGame {
        if(min==number)
        	return min;
        else
-       	return -1;*/
+       	return -1;
     };
 
     this.lower= function (){
