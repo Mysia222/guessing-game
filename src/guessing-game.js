@@ -18,15 +18,16 @@ class GuessingGame {
     }
 
     lower (){
-    	this.max=this.number-1;
-    	return this;
+    
+    	return this.max=this.number;
 		
     }
 
     greater (){
-   	 	this.min=this.number;
-   	 	return this;
+   	 	
+   	 	return this.min=this.number;
     }
   } 
 
 module.exports = GuessingGame;
+
